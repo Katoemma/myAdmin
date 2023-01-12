@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beeper admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+</head>
+<body>
+    <!--The top navigation bar-->
+    <nav>
+        <div class="logo">
+            
+            <h3><span style="color:#d51498">Beeper</span>  Admin</h3>
+            <div class="menu-icon" onclick="dash(this)">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+        </div>
+        
+        <div class="menu-links">
+            <h3><a href="#">messages</a></h3>
+            <h3><a href="#">notification</a></h3>
+            <h3><a href="#">forms</a></h3>
+        </div>   
+        <div class="mini-profile">
+            <img src="avatar.png" alt="Avatar">
+            <div class="profile-d">
+                <h5><div class="dot"></div> Emma Kato</h5>
+                <!--profile dropdown-->
+                <div class="drop-down-content">
+                    <li>profile</li>
+                    <li>my sales</li>
+                    <li>clients</li>
+                    <li>Log-out</li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--end of the top navigation bar-->
+    <main>
+        <!--sidebar section  for the dashboard-->
+        <aside class="side-bar" id="side-bar">
+            <a href="#">
+                <li>Dashboard</li>
+            </a>
+            <a href="#">
+                <li>Forms</li>
+            </a>
+            <a href="#">
+                <li>Clients</li>
+            </a>
+            <a href="#">
+                <li>Elements</li>
+            </a>
+        </aside>
+        <!--end of the sidebar-->
+        <div class="dashboard">
+            <h1>Dashboard</h1>
+            <p><a href="#">Home</a> / <a href="#"> Dashboard</a></p>
+            <div class="dashboard-data">
+                <div class="main-dash">
+                    <div class="sales-revenue">
+                        <div class="card">
+                            <div class="cardtitle">
+                                <h3><span id="cardtitle-m">Sales</span> | Today </h3>
+                                <div class="menu-it">
+                                    <div class="round"></div>
+                                    <div class="round"></div>
+                                    <div class="round"></div>
+                                </div>
+                            </div>
+                            <div class="card-data">
+                                <img src="images/Shield.svg" alt="palce">
+                                <div class="num-perc">
+                                    <h2>1453 <br> <span>12% increase</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="cardtitle">
+                                <h3><span id="cardtitle-m">Revenue</span> | Today </h3>
+                                <div class="menu-it">
+                                    <div class="round"></div>
+                                    <div class="round"></div>
+                                    <div class="round"></div>
+                                </div>
+                            </div>
+                            <div class="card-data">
+                                <img src="images/time.svg" alt="palce">
+                                <div class="num-perc">
+                                    <h2>$1453 <br> <span>12% increase</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardtitle">
+                            <h3><span id="cardtitle-m">Customers</span> | Today </h3>
+                            <div class="menu-it">
+                                <div class="round"></div>
+                                <div class="round"></div>
+                                <div class="round"></div>
+                            </div>
+                        </div>
+                        <div class="card-data">
+                            <img src="images/time.svg" alt="palce">
+                            <div class="num-perc">
+                                <h2>1453 <br> <span>12% decrease</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardtitle">
+                            <h3><span id="cardtitle-m">Reports</span> | Today </h3>
+                            <div class="menu-it">
+                                <div class="round"></div>
+                                <div class="round"></div>
+                                <div class="round"></div>
+                            </div>
+                        </div>
+                        <div class="card-data">
+                            <img src="images/time.svg" alt="palce">
+                            <div class="num-perc">
+                                <h2>1453 <br> <span>12% increase</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity-dash">
+                    <div class="card">
+                        <div class="cardtitle">
+                            <h3><span id="cardtitle-m">Recent Activity</span> | Today </h3>
+                            <div class="menu-it">
+                                <div class="round"></div>
+                                <div class="round"></div>
+                                <div class="round"></div>
+                            </div>
+                        </div>
+                        <div class="card-data" id="activity-data">
+                            <div class="activity">
+                                <label>10 mins</label>
+                                <p>Elias posted the feedback on the line </p>
+                            </div>
+                            <div class="activity">
+                                <label>10 mins</label>
+                                <p>Elias posted the feedback on the line </p>
+                            </div>
+                            <div class="activity">
+                                <label>10 mins</label>
+                                <p>Elias posted the feedback on the line </p>
+                            </div>
+                            <div class="activity">
+                                <label>10 mins</label>
+                                <p>Elias posted the feedback on the line </p>
+                            </div>
+                            <div class="activity">
+                                <label>10 mins</label>
+                                <p>Elias posted the feedback on the line </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardtitle">
+                            <h3><span id="cardtitle-m">Reports</span> | Today </h3>
+                            <div class="menu-it">
+                                <div class="round"></div>
+                                <div class="round"></div>
+                                <div class="round"></div>
+                            </div>
+                        </div>
+                        <div class="card-data">
+                            <img src="images/time.svg" alt="palce">
+                            <div class="num-perc">
+                                <h2>1453 <br> <span>12% increase</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardtitle">
+                            <h3><span id="cardtitle-m">Reports</span> | Today </h3>
+                            <div class="menu-it">
+                                <div class="round"></div>
+                                <div class="round"></div>
+                                <div class="round"></div>
+                            </div>
+                        </div>
+                        <div class="card-data">
+                            <img src="images/time.svg" alt="palce">
+                            <div class="num-perc">
+                                <h2>1453 <br> <span>12% increase</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardtitle">
+                            <h3><span id="cardtitle-m">Reports</span> | Today </h3>
+                            <div class="menu-it">
+                                <div class="round"></div>
+                                <div class="round"></div>
+                                <div class="round"></div>
+                            </div>
+                        </div>
+                        <div class="card-data">
+                            <img src="images/time.svg" alt="palce">
+                            <div class="num-perc">
+                                <h2>1453 <br> <span>12% increase</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
